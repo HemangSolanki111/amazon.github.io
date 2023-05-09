@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Amazon online shopping center</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" type="text/x-icon" href="image/favcon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   
+
+    <style>
+        body{
+            background-color: #e3e6e6;
+            padding: 0px;
+            margin: 0%;
+            overflow-x: hidden;
+        }
+
+        #header{
+            background-color: #131921;
+            width: 100%;
+            height: auto;
+            margin-top: 0%;
+            float: left;
+        }
+
+        .logo img{
+            width: 10%;
+            height: auto;
+            float: left;
+            margin-top: 0.5%;
+            margin-left: 1%;
+        }
+
+        .hello{
+            margin-left: .5%;
+            float: left;
+            color: white;
+            line-height: 0%;    
+            width: 200px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hello p{
+            margin-left: 3%;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .hello h3{
+            font-size: 17px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hello img{
+          width: 7%;
+        }
+
+        .search-in select{
+            width: 3%;
+            height: 40px;
+            background-color: lightgray;
+            padding: 0%;
+            margin-top: 0.8%;
+            float: left;
+            border-radius: 10% 0% 0% 10%;
+        }
+
+        .search{
+            width: 35%;
+            height: 40px;
+            float: left;
+            margin-top: 0.8%;
+            background-color: white;
+        }
+
+        .search input{
+            width: 99%;
+            height: 35px;
+        }
+        .button input{
+            float: left;
+            width: 4%;
+            height: 41.5px;
+            margin-top: 0.8%;
+            background-color: rgb(244, 167, 68);
+            border-radius: 0% 10% 10% 0%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .language select{
+            float: left;
+            margin-left: 2%;
+            width: 3%;
+            height: 38px;
+            margin-top: .8%;
+            background-color: #131921;
+            color: white;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .signin{
+            float: left;
+            margin-left: 3%;
+            color: white;
+            line-height: 0% ;
+            margin-top: 0.5%;
+        }
+
+        .signin p{
+            font-size: 12px;
+            margin-left: 5%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .signin select{
+            background-color: #131921;
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .return{
+            float: left;
+            line-height: 0%;
+            color: white;
+            margin-left: 2%;
+            margin-top: 0.3%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cart{
+            margin-top: 0.5%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cart img{
+            float: left;
+            width: 3%;
+            margin-left: 3%;
+            margin-top: 0.4%;
+        }
+
+        .cart h3{
+            float: left;
+            color: white;
+        }
+
+/* End Header */
+
+
+/* Start Navbar */
+        #navbar{
+            background-color: #232f3e;
+            width: 100%;
+            height: auto;
+            float: left;
+        }
+
+        .all img{
+            float: left;
+            width: 2%;
+            margin-top: 1.2%;
+        }
+
+        .all h4{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0%;
+        }
+
+        .Amazon-miniTV{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+
+        .sell{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+        
+        .bestseller{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+        .mobile{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+        .today{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+        .customer{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+
+        .newrealese{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+        .electronics{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+        .prime{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+        .home-kitchen{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+
+        .amazonpay{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 18px;
+        }
+
+        .summer{
+            float: right;
+            margin-top: 5px;
+        }
+
+
+/* End Navbar */
+
+
+
+/* Hero Secton */
+        #hero{
+            width: 98.5%;
+            height: auto;
+            background: linear-gradient(rgba(0,0,0,0.2), white), url(image/Tallhero_3000x1200_set_3._CB589336404_.jpg);
+            margin-left: 0.8%;
+            background-size: cover;
+            float: left;
+        }
+
+        .box1{
+            background-color: white;
+            float: left;
+            width: 20%;
+            height: 360px;
+            margin-top: 330px;
+            margin-left: 3%;
+        }
+
+        .box1 p{
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify;
+            margin: 5%;
+            font-weight: bold;
+            line-height: 170%;
+        }
+
+        .box1 img{
+            width: 45%;
+            margin-top: 10%;
+            margin-left: 3%;
+            height: 100px;
+        }
+
+        .box2{
+            background-color: white;
+            float: left;
+            width: 20%;
+            height: 360px;
+            margin-top: 330px;
+            margin-left: 3%;
+        }
+
+        .box2 p{
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify;
+            margin: 5%;
+            font-weight: bold;
+            line-height: 170%;
+        }
+
+        .box2 img{
+            width: 45%;
+            margin-top: 10%;
+            margin-left: 3%;
+            height: 100px;
+        }
+
+        .box3{
+            background-color: white;
+            float: left;
+            width: 20%;
+            height: 360px;
+            margin-top: 330px;
+            margin-left: 3%;
+        }
+
+        .box3 p{
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify;
+            margin: 5%;
+            font-weight: bold;
+            line-height: 170%;
+        }
+
+        .box3 img{
+            width: 45%;
+            margin-top: 10%;
+            margin-left: 3%;
+            height: 100px;
+        }
+
+        .box4{
+            background-color: white;
+            float: left;
+            width: 25%;
+            height: 140px;
+            margin-top: 330px;
+            margin-left: 3%;
+        }
+
+        .box4 p{
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify;
+            margin: 5%;
+            font-weight: bold;
+            line-height: 170%;
+        }
+
+        .box4 input{
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 0%;
+            margin-left: 5%;
+            background-color: rgb(255, 208, 0);
+            border: none;
+            border-radius: 10px;
+            padding-left: 30%;
+            padding-right: 30%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .box5 img{
+            float: left;
+            margin-top: 1%;
+            margin-left: 3%;
+            width: 25%;
+            height: 200px;
+        }
+
+
+/* End Hero Secton */
+
+
+/* content 1 */
+        #content1{
+            background-color: white;
+            width: 98.5%;
+            height: 300px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 1.5%;
+        }
+
+        #content1 p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin-left: 2%;
+        }
+
+        .mobile img{
+            margin-left: 20%;
+            float: left;
+        }
+
+        
+
+/* End content 1 */
+
+/* content 2 */
+        #content2{
+            background-color: white;
+            width: 98.5%;
+            height: 300px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 1.5%;
+        }
+
+        #content2 p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin-left: 2%;
+        }
+
+        .mobile img{
+            margin-left: 20%;
+            float: left;
+        }
+
+        
+
+/* End content 2 */
+
+/* content 3 */
+        #content3{
+            background-color: white;
+            width: 98.5%;
+            height: 300px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 1.5%;
+        }
+
+        #content3 p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin-left: 2%;
+        }
+
+        .mobile img{
+            margin-left: 20%;
+            float: left;
+        }
+
+/* End content 3 */
+
+
+/* conten 4 */
+
+        #content4{
+            background-color: white;
+            width: 98.5%;
+            float: left;
+            margin-top: 2%;
+            margin-left: 0.8%;
+        }
+
+        #content4 img{
+            margin-left: 10%;
+            float: left;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+/* End conten 4 */
+
+
+/* content 5 */
+        #content5{
+            background-color: white;
+            width: 98.5%;
+            height: 300px;
+            float: left;
+            margin-left: 0.8%;
+            margin-top: 1.5%;
+        }
+
+        #content5 p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin-left: 2%;
+        }
+
+        .mobile img{
+            float: left;
+            margin-left: 20%;
+        }
+
+/* End content 5 */
+
+
+/* button sign in */
+        #btn{
+            width: 100%;
+            height: auto;
+            background-color: white;
+            float: left;
+            margin-top: 2%;
+        }
+
+        #btn input{
+            background-color: #f5ee16;
+            align-items: center;
+            height: 28px;
+            font-family: 'Montserrat', sans-serif;
+            width: 17%;
+            border-radius: 10px;
+            border-color: rgb(255, 208, 0);
+        }
+
+        #btn p{
+            font-weight: 100;
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+    
+        }
+        
+        #btn p a{
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+
+/* End button sign in */
+
+
+/* Footer backtotop */
+
+        .backtotop{
+            float: left;
+            width: 100%;
+            background-color: #37475a;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-size: 14px;
+            font-weight: 200;
+        }
+/* End Footer backtotop */
+
+
+/* Footer */
+
+        #footer{
+            float: left;
+            width: 100%;
+            height: auto;
+            background-color: #232f3e;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+        }
+
+        .col1{
+            width: fit-content;
+            height: auto;
+            margin-left: 8%;
+            float: left;
+        }
+
+        .col1 ul li{
+            color: white;
+            width: fit-content;
+            list-style-type: none;
+            line-height: 200%;
+        }
+
+        .col1 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        
+
+        .col2{
+            width: fit-content;
+            height: auto;
+            margin-left: 5%;
+            float: left;
+        }
+        .col2 ul li{
+            width: fit-content;
+            color: white;
+            list-style-type: none;
+            line-height: 200%;
+        }
+
+        .col2 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .col3{
+            width: fit-content;
+            height: auto;
+            margin-left: 5%;
+            float: left;
+        }
+
+        .col3 ul li{
+            width: fit-content;
+            color: white;
+            list-style-type: none;
+            line-height: 200%;
+        }
+
+        .col3 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .col4{
+            width: fit-content;
+            height: auto;
+            margin-left: 5%;
+            float: left;
+        }
+
+        .col4 ul li{
+            width: fit-content;
+            color: white;
+            list-style-type: none;
+            line-height: 200%;
+        }
+
+        .col4 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .hr{
+            float: left;
+            width: 100%;
+            margin-top: 5%;
+            opacity: 0.2;
+        }
+
+
+        .footerlogo{
+            float: left;
+            margin-left: 30%;
+            padding: 0%;
+            width: fit-content;
+        }
+
+        .footerlogo img{
+            width: 30%;
+            margin-top: 10%;
+        }
+
+
+        .lang{
+            float: left;
+            width: fit-content;
+            margin-left: 0%;
+            margin-top: 30px;
+            border: solid 1px gray;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        .lang select{
+            color: white;
+            background-color: #232f3e;
+            border: none;
+            padding: 2px;
+        }
+
+
+        .country{
+            text-align: center;
+            float: left;
+            width: fit-content;
+            margin-top: 2%;
+            margin-left: 17%;
+            margin-bottom: 1%;
+        }
+
+        .country ul li{
+            list-style-type: none;
+            display: inline-block;
+            color: lightgray;
+            padding: 5px;
+            font-size: 12px;
+        }
+        
+
+        .lastfooter{
+            width: 100%;
+            height: auto;
+            background-color: #131921;
+            float: left;
+        }
+
+        .column1{
+            float: left;
+            width: 15%;
+            margin-left: 12.5%;
+            margin-top: 2%;
+        }
+        .column1 p{
+            color: white;
+            text-decoration: none;
+            line-height: 0%;
+            font-size: 12px;
+        }
+        .column1 a{
+            text-decoration: none;
+            list-style-type: none;
+            color: lightgray;
+            font-size: 10px;
+        }
+
+
+        .column2{
+            float: left;
+            width: 15%;
+            margin-top: 2%;
+        }
+        .column2 p{
+            color: white;
+            text-decoration: none;
+            line-height: 0%;
+            font-size: 12px;
+        }
+        .column2 a{
+            text-decoration: none;
+            list-style-type: none;
+            color: lightgray;
+            font-size: 10px;
+        }
+
+        .column3{
+            float: left;
+            width: 15%;
+            margin-top: 2%;
+        }
+        .column3 p{
+            color: white;
+            text-decoration: none;
+            line-height: 0%;
+            font-size: 12px;
+        }
+        .column3 a{
+            text-decoration: none;
+            list-style-type: none;
+            color: lightgray;
+            font-size: 10px;
+        }
+
+
+        .column4{
+            float: left;
+            width: 15%;
+            margin-top: 2%;
+        }
+        .column4 p{
+            color: white;
+            text-decoration: none;
+            line-height: 0%;
+            font-size: 12px;
+        }
+        .column4 a{
+            text-decoration: none;
+            list-style-type: none;
+            color: lightgray;
+            font-size: 10px;
+        }
+
+
+        .column5{
+            float: left;
+            width: 15%;
+            margin-top: 2%;
+        }
+        .column5 p{
+            color: white;
+            text-decoration: none;
+            line-height: 0%;
+            font-size: 12px;
+        }
+        .column5 a{
+            text-decoration: none;
+            list-style-type: none;
+            color: lightgray;
+            font-size: 10px;
+        }
+
+
+        .lastp{
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin-bottom: 20px;
+            padding-top: 2%;
+        }
+
+        .lastp p{
+            line-height: 5px;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+/* End Footer */
+
+
+
+
+    </style>
+</head>
+<body>
+
+ <!-- Header start -->
+
+    <div id="header">
+        <div class="logo">
+            <img src="image/a.png">
+        </div>
+
+        <div class="hello">
+            <p>Hello</p>
+            <h3><img src="image/placeholder.png">Select your Address</h3>
+        </div>
+
+        <div class="search-in">
+            <select name="All">
+                <option value="">All</option>
+                <option value="1">Menswere</option>
+                <option value="2">Ladies were</option>
+                <option value="3">Kids</option>
+                <option value="4">Mobile</option>
+                <option value="5">Shoes</option>
+                <option value="6">Accessories</option>
+                <option value="7">Electronics</option>
+                <option value="8">Fashion</option>
+            </select>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Enter Text Here">
+        </div>
+        <div class="button">
+            <input type="button"  value="search">
+        </div>
+       
+
+        <div class="language">
+            <select name="EN">
+            <option value="">EN</option>
+            <option value="1">Hindi</option>
+            <option value="2">Gujarati</option>
+            <option value="3">English</option>
+            <option value="4">germany</option>
+            <option value="5">France</option>
+            </select>
+        </div>
+
+
+        <div class="signin">
+            <p>Hello, sign in</p>
+            <select name="Account & List">
+                <option value="">Account & List</option>
+                <option value="1">Login</option>
+                <option value="2">Register</option>
+                <option value="3">Forget</option>
+            </select>
+        </div>
+
+        <div class="return">
+            <p>Return</p>
+            <h4>& Order</h4>
+        </div>
+
+        <div class="cart">
+            <img src="image/download-removebg-preview.png">
+            <h3>Cart</h3>
+        </div>
+    </div>
+<!-- Header End -->
+
+
+<!-- navbar -->
+    <div id="navbar">
+        <div class="all">
+            <img src="image/menubaar.png">
+            <h4>All</h4>
+        </div>
+
+        <div class="Amazon-miniTV">Amazon miniTV</div>
+
+        <div class="sell">sell</div>
+
+        <div class="bestseller">Best Seller</div>
+
+        <div class="mobile">Mobiles</div>
+
+        <div class="today">Today's Deal</div>
+
+        <div class="customer">Customer Service</div>
+        
+        <div class="newrealese">New Releases</div>
+
+        <div class="electronics">Electronics</div>
+
+        <div class="prime">Prime</div>
+
+        <div class="home-kitchen">Home & Kitchen</div>
+
+        <div class="amazonpay">Amazon Pay</div>
+
+        <div class="summer"><img src="image/SWM_400x39_LiveNow._CB590561779_.jpg"></div>
+
+    </div>
+
+
+<!-- navbar End -->
+
+
+
+<!-- Hero -->
+    <section id="hero">
+        
+        <div class="box1">
+            <p>Up to 70% off | Books, toys, grooming & more</p>
+            <img src="image/box 1 1.jpg">
+            <img src="image/box 1 2.jpg">
+            <img src="image/box 1 3.jpg">
+            <img src="image/box 1 4.jpg">
+            
+        </div>
+
+        <div class="box2">
+            <p>Smart phone that suit your bugdet</p>
+            <img src="image/box 2 1.jpg">
+            <img src="image/box 2 2.jpg">
+            <img src="image/box 2 3.jpg">
+            <img src="image/box 2 4.jpg">
+            
+        </div>
+
+        <div class="box3">
+            <p>Starting &#8377;79 | Home, Kitchen & more</p>
+            <img src="image/box 3 1.jpg">
+            <img src="image/box 3 2.jpg">
+            <img src="image/box 3 3.jpg">
+            <img src="image/box 3 4.jpg">
+        </div>
+
+        <div class="box4">
+            <p>Sign in for your best<br> Experience</p>
+            <input type="button" value="Sign in Securely">
+        </div>
+
+        <div class="box5">
+            <img src="image/box 5.jpg">
+        </div>
+
+
+    </section>
+
+
+<!-- Hero End -->
+
+
+<!-- Content -->
+    <div id="content1">
+        <p><b>Blockbuster deal</p>
+        <div class="mobile"><img src="image/mobile1.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 3%;"><img src="image/mobile2.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 3%;"><img src="image/mobile3.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 3%;"><img src="image/speaker.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 3%;"><img src="image/earphone4.jpg"></div>
+
+        <div class="mobile" style="float: left; margin-left: 3%;"><img src="image/fashion.jpeg"></div>
+    </div>
+
+    <div id="content2">
+        <p><b>Blockbuster deal</p>
+        <div class="mobile" style="float: left; margin-left: 1%;"><img src="image/content 3 6.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 1%;"><img src="image/content 3 1.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 1%;"><img src="image/content 3 2.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 1%;"><img src="image/content 3 3.jpg"></div>
+        
+        <div class="mobile" style="float: left; margin-left: 1%;"><img src="image/content 3 4.jpg"></div>
+
+        <div class="mobile" style="float: left; margin-left: 2%;"><img src="image/content 3 5.jpg"></div>
+
+    </div>
+
+    <div id="content4">
+       <img src="image/content 4.jpg">
+    </div>
+
+    <div id="content5">
+        <p>Best salling Books</p>
+
+        <div class="mobile"><img src="image/content 5 1.jpg"></div>
+        <div class="mobile"><img src="image/content 5 2.jpg"></div>
+        <div class="mobile"><img src="image/content 5 3.jpg"></div>
+        <div class="mobile"><img src="image/content 5 4.jpg"></div>
+        <div class="mobile"><img src="image/content 5 5.jpg"></div>
+        <div class="mobile"><img src="image/content 5 6.jpg"></div>
+        <div class="mobile"><img src="image/content 5 7.jpg"></div>
+        <div class="mobile"><img src="image/content 5 8.jpg"></div>
+        <div class="mobile"><img src="image/content 5 9.jpg"></div>
+
+    </div>
+
+
+<!-- Content End -->
+
+
+<!-- button sign in -->
+
+    <div id="btn">
+        <hr style="opacity: 0.5; color: lightgrey;">
+        <p>See personalized recommendations</p>
+        <center><input type="button" value="Sign in"></center>
+        <p>New Custome?<a href="#">Start Here</a></p>
+        <hr style="color: lightgray; opacity: 0.5;">
+    </div>
+<!-- End button sign in -->
+
+
+<!-- Start Footer -->
+
+    <div class="backtotop">
+        <center><p>Back to top</p></center>
+    </div>
+
+
+    <div id="footer">
+        <div class="col1">
+            <ul>
+                <li class="active"><h3>Get to Know Us</h3></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">Amazon Science</a></li>
+            </ul>
+        </div>
+
+        <div class="col2">
+            <ul>
+                <li class="active"><h3>Connect with Us</h3></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="col3">
+            <ul>
+                <li class="active"><h3>Make Money with Us</h3></li>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Sell under Amazon Accelerator</a></li>
+                <li><a href="#">Protect and Build Your Brand</a></li>
+                <li><a href="#">Amazon Global Selling</a></li>
+                <li><a href="#">Become an Affiliate</a></li>
+                <li><a href="#">Fulfilment by Amazon</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+                <li><a href="#">Amazon Pay on Merchants</a></li>
+            </ul>
+        </div>
+
+        <div class="col4">
+            <ul>
+                <li class="active"><h3>Let Us Help You</h3></li>
+                <li><a href="#">COVID-19 and Amazon</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Returns Centre</a></li>
+                <li><a href="#">100% Purchase Protection</a></li>
+                <li><a href="#">Amazon App Download</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+
+        <div class="hr">
+            <hr>
+        </div>
+
+        <center>
+        <div class="footerlogo">
+            <img src="image/a 2.png">
+        </div>
+
+        <div class="lang">       
+        <span>&#x1F310;</span><select name="English">
+            <option value="">English</option>
+            <option value="1">Hindi</option>
+            <option value="2">Gujarati</option>
+            <option value="3">USA</option>
+            <option value="4">Japaness</option>
+            <option value="5">Chiness</option>
+            <option value="6">French</option>
+        </select>
+        </div>
+
+        <div class="country">
+            <ul>
+                <li>Australia</li>
+                <li>Brazil</li>
+                <li>Canada</li>
+                <li>France</li>
+                <li>Germany</li>
+                <li>Italy</li>
+                <li>Japan</li>
+                <li>Mexico</li>
+                <li>Netherland</li>
+                <li>Poland</li>
+                <li>Singapur</li>
+                <li>Spain</li>
+                <li>Turky</li>
+                <li>United Arab Emirates</li><br>
+                <li>United Kigndom</li>
+                <li>United States</li>
+            </ul>
+
+        </div>
+        </center>
+
+        <div class="lastfooter">
+           <div class="column1">
+                <ul>
+                    <a href="#"><li><p>AdeBooks</p></li>
+                        <li>Books, art <br>& collaction</li>
+                        <br>
+                    </a>
+
+                    <a href="#"><li><p>Shopbop</p></li>
+                        <li>Designer</li>
+                        <li>Fashion Brand</li>
+                    </a>
+                    
+                </ul>
+           </div>
+
+           <div class="column2">
+              <ul>
+                <a href="#"><li><p>Amazon Web Servce</p></li>
+                    <li>Scalable Cloud<br>Computing Services</li>
+                    <br>
+                </a>
+
+                <a href="#"><li><p>Amazon Business</p></li>
+                    <li>Everything for</li>
+                    <li>your business</li>
+                </a>
+                
+              </ul>
+            </div>
+
+            <div class="column3">
+                <ul>
+                    <a href="#"><li><p>Audible</p></li>
+                        <li>Download</li>
+                        <li>Audio Book</li>
+                        <br>
+                    </a>
+
+                    <a href="#"><li><p>Prime Now</p></li>
+                        <li>2-hour Delivery</li>
+                        <li>on everyitem</li>
+                    </a>              
+                </ul>
+           </div>
+
+           <div class="column4">
+                <ul>
+                    <a href="#"><li><p>DPReview</p></li>
+                        <li>Digital</li>
+                        <li>Photography</li>
+                        <br>
+                    </a>
+
+                    <a href="#"><li><p>Amazon Prime Music</p></li>
+                        <li>100 million songs, ad-free</li>
+                        <li>Over 15 million podcast episodes</li>
+                    </a> 
+                </ul>
+           </div>
+           <div class="column5">
+                <ul>
+                    <a href="#"><li><p>IMDB</p></li>
+                        <li>Movie, TV</li>
+                        <li>& Celebrities</li>
+                    </a>
+                </ul>
+           </div>
+
+
+           <div class="lastp">
+                <p>Conditions of Use & Sale Privacy Notice Interest-Based Ads</p>
+                <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+           </div>
+       </div>
+    </div>
+<!-- End Footer -->
+</body>
+</html>
